@@ -12,6 +12,10 @@ https://auto23-staging.herokuapp.com/
 
 https://github.com/Steve-Drewery/auto-official
 
+## Trello Link
+
+https://trello.com/b/BB52qgPr/marketplace-app
+
 
 ## Description
 
@@ -82,10 +86,13 @@ As a buyer who mostly browses on my phone, I would like to be able to easily swi
 
 ## High level components
 
-user interface
-search function
-hamburger nav bar
-MVC
+- Search function
+A search function has been used within the nav bar to enable users to narrow down listings by entering the name of the listing.
+
+- Hamburger nav-bar
+The nav-bar has been styled in order to be device friendly with a hamburger bar. This allows the nav-bar to shrink to ensure users screens are not overwhelmed and applies some styling attributes.
+
+- Model
 
 
 ## Third-party Services
@@ -94,15 +101,16 @@ MVC
 In order to allow payment options within the marketplace Stripe has been implemented, allowing users to easily pay by card online. 
 
 - Devise
-In order to 
+In order to create a user environment where listings are related to a buyer and seller, devise has been implemented. This enables the use of authentication when editing or destroying a post and disabling users from buying their own items.
 
 - Ultrahook
+In order to track whether payments have been processed and recieved, ultrahook has been implemented where if a code of 200 is recieved, correct payment has been made; else the item will stay for sale.
 
-## Models and their Relationships
+- AWS
+In order to store images of each users listings, AWS has been implemented. This allows images to be stored off the database to ensure a pleasent user experience.
 
-## Database relations
-
-## Database Schema Design
+- Bootstrap
+For design, bootstrap has been used to style elements within the app.
 
 ## Project Management
 
