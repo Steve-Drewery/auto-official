@@ -6,11 +6,11 @@ Autoparts marketplace is an application which allows car enthusiasts to connect 
 
 ## Deployed Link
 
-https://autopartsmarketplace.herokuapp.com/
+https://auto23-staging.herokuapp.com/
 
 ## Github Link
 
-https://github.com/Steve-Drewery/auto23
+https://github.com/Steve-Drewery/auto-official
 
 
 ## Description
@@ -60,6 +60,22 @@ As a buyer who mostly browses on my phone, I would like to be able to easily swi
 ![show](app\assets\images\W-show.png)
 - New Listing
 ![new listing](app\assets\images\W-new-listing.png)
+
+## Screenshots
+
+- Home
+![home](app\assets\images\ss-home.png)
+- Home, Logged in
+![listings](app\assets\images\ss-listings.png)
+- Show
+![show](app\assets\images\ss-ilistingpage.png)
+- New Listing
+![new listing](app\assets\images\ss-newlisting.png)
+- Stripe
+![stripe](app\assets\images\ss-stripe.png)
+- Validation
+![validation](app\assets\images\ss-validation.png)
+
 ## ERD
 
 ![ERD](app\assets\images\ERD.png)

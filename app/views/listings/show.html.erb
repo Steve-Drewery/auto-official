@@ -6,6 +6,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+
+    <%# styling for image sizing to fit card %>
 <style>
 img {
   width: 300px;
@@ -14,7 +16,7 @@ img {
 </style>
 
 <h2><%= @listing.title %></h2>
-  <div class="card mb-3" style="width: 60rem;">
+  <div class="card mb-3">
   <div class="row g-0">
     <div class="col-md-4 ">
     <div>
@@ -28,6 +30,7 @@ img {
       <p class="card-text"><h3>Condition: </h3><%= format_condition(@listing.condition) %></p>
       <p class="card-text"><h3>Price: </h3><%= number_to_currency(@listing.price) %></p>
       <p class="card-text"><h3>User: </h3><%= @listing.user.username %></p>
+      <%# if statement to show sold if sold, buy item if not own item and if own item display "you cant buy your own item." %>
       <% if @listing.sold %>
       <p class="card-text"><small class="text-muted">Sold!</small></p>
       <% elsif current_user.id == @listing.user_id %>

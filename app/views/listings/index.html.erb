@@ -11,7 +11,7 @@
 
 
 <h1>Listings</h1>
-<table class="table table-striped table-hover table-bordered">
+<table class="table table-striped table-hover table-bordered table-responsive">
   <thead class="table-dark">
     <tr>
       <th>Title</th>
@@ -23,7 +23,7 @@
     </tr>
   </thead>
 
-
+<%# table for listings can be displayed with show button. Users can edit/destroy their own listings but no one elses due to those buttons being hidden. %>
   <tbody>
     <% @listings.each do |listing| %>
       <tr>
