@@ -11,7 +11,8 @@
 
 
 <h1>Listings</h1>
-<table class="table table-striped table-hover table-bordered table-responsive">
+<div class="table-responsive">
+<table class="table table-striped table-hover table-bordered">
   <thead class="table-dark">
     <tr>
       <th>Title</th>
@@ -40,7 +41,7 @@
     <% end %>
   </tbody>
 </table>
-
+</div>
 <br>
 
 <%= link_to 'New Listing', new_listing_path, class: "btn btn-secondary btn text-bg-dark" %>
